@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --mint: #3dd28d;
+    --grey: #999999;
+}
+
+main {
+    width: 100vw;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    overflow: hidden;
+    background-color: #ccc;
+
+    padding: 12px 12px;
+
+    cursor: pointer;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: black;
+    border: 0 none;
+    border-radius: 4px;
+
+    font-size: 0.88rem;
+    line-height: 1.3;
+
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+
+    box-shadow: 2px 5px 10px #e5e5e5;
+}
+
+.button:hover {
+    transition: all 150ms linear;
+    opacity: .85;
+}
+
+.button:active {
+    transition: all 150ms linear;
+    opacity: .75;
+}
+
+.button:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px;
+}
+
+/* ==== END GENERAL ==== */
+/* ==== START HERO ==== */
+
+.hero {
+    background: url('../img/background.jpg') no-repeat center bottom;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+.hero-subtitle {
+    text-align: center;
+    color: var(--grey);
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 576px) {
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+.hero-contents {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-button {
+    margin-top: 20px;
+    background-color: var(--mint);
+    color: white;
+}
+
+/* ==== END HERO ==== */
+/* ==== START PROJECTS ==== */
+
+.projects-container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px;
+}
+
+@media (max-width: 576px) {
+    .projects-container {
+        padding: 40px 10px;
+    }
+}
+
+.projects-header {
+    margin-bottom: 20px;
+}
+
+.projects-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    height: 300px;
+    min-height: 300px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+    background: no-repeat center center;
+    background-size: cover;
+    flex: 1 1 140px;
+}
+
+.card-image-pickleheads {
+    background-image: url('../img/projects/pickleheads.jpg');
+}
+
+.card-image-pickle-jar-cli {
+    background-image: url('../img/projects/pickle-jar-cli.jpg');
+}
+
+.card-info-container {
+    border-bottom: 1px solid var(--grey);
+    padding: 10px 10px;
+    flex: 1 1 auto;
+}
+
+.card-description {
+    font-size: 0.88rem;
+    color: var(--grey);
+}
+
+.card-actions-container {
+    padding: 6px 10px;
+    flex: 0 0 auto;
+    display: block;
+}
+
+.button.card-button {
+    width: 80px;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+.button.card-button:hover {
+    transition: all 150ms linear;
+    background-color: #e5e5e5;
+}
+
+/* ==== END PROJECTS ==== */
