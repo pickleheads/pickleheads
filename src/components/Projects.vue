@@ -35,12 +35,23 @@ export default {
         },
         {
           title: 'Pickle Jar CLI',
-          description: 'A place to store all of our ideas',
+          description: 'A CLI for the place to store all of our ideas',
           image: '/img/projects/pickle-jar-cli.jpg',
           actions: [
             {
               name: 'GitHub',
               url: 'https://github.com/pickleheads/pickle-jar-cli',
+            },
+          ],
+        },
+        {
+          title: 'Pickle Jar API',
+          description: 'An API for the place to store all of our ideas',
+          image: '/img/projects/pickle-jar-cli.jpg',
+          actions: [
+            {
+              name: 'GitHub',
+              url: 'https://github.com/pickleheads/pickle-jar-api',
             },
           ],
         },
