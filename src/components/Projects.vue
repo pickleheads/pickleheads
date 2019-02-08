@@ -55,6 +55,17 @@ export default {
             },
           ],
         },
+        {
+          title: 'Pickle Jar Mobile Client',
+          description: 'A mobile app to access our shitty ideas',
+          image: '/img/projects/pickle-jar-cli.jpg',
+          actions: [
+            {
+              name: 'GitHub',
+              url: 'https://github.com/pickleheads/pickle-jar-mobile-app',
+            },
+          ],
+        },
       ],
     };
   },
