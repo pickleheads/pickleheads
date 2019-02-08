@@ -3,9 +3,11 @@
     <div class="hero-contents">
       <h1 class="hero-title">Welcome to the Pickleheads Club</h1>
       <p>
-        <i class="hero-subtitle">We build stupid shit.</i>
+        <i class="hero-subtitle">We build really stupid shit.</i>
       </p>
-      <a class="button hero-button" href="#projects">
+      <a class="button hero-button"
+         data-scroll
+         href="#projects">
         See Projects
       </a>
     </div>
