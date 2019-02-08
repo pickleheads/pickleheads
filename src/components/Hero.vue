@@ -25,6 +25,7 @@ export default {
   background: url('/img/background.jpg') no-repeat center bottom;
   background-size: cover;
   height: 100vh;
+  box-shadow: 0 2px 10px #999;
 }
 
 .hero-title {
