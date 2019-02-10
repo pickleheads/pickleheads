@@ -2,18 +2,21 @@
   <div id="app" class="main">
     <Hero />
     <Projects />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from './components/Footer.vue';
 import Hero from './components/Hero.vue';
 import Projects from './components/Projects.vue';
 
 export default {
   name: 'app',
   components: {
+    Footer,
     Hero,
-    Projects
+    Projects,
   },
 };
 </script>
@@ -25,8 +28,9 @@ export default {
 }
 
 :root {
-  --mint: #3dd28d;
+  --black: #292a2c;
   --grey: #999999;
+  --mint: #3dd28d;
 }
 
 .main {
@@ -34,8 +38,13 @@ export default {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Playfair Display', sans-serif;
+  color: var(--black);
 }
 
 h1 {
@@ -68,7 +77,7 @@ h1 {
   white-space: nowrap;
   text-decoration: none;
 
-  color: black;
+  color: var(--black);
   border: 0 none;
   border-radius: 4px;
 
