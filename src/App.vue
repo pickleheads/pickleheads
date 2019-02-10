@@ -2,14 +2,16 @@
   <div id="app" class="main">
     <Hero />
     <Projects />
+    <Testimonials />
     <Footer />
   </div>
 </template>
 
 <script>
-import Footer from './components/Footer.vue';
-import Hero from './components/Hero.vue';
-import Projects from './components/Projects.vue';
+import Footer from './components/Footer/Footer.vue';
+import Hero from './components/Hero/Hero.vue';
+import Projects from './components/Projects/Projects.vue';
+import Testimonials from './components/Testimonials/Testimonials.vue';
 
 export default {
   name: 'app',
@@ -17,6 +19,7 @@ export default {
     Footer,
     Hero,
     Projects,
+    Testimonials,
   },
 };
 </script>
@@ -55,6 +58,10 @@ h1 {
   h1 {
     font-size: 2rem;
   }
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .container {

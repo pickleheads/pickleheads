@@ -88,7 +88,6 @@ export default {
 }
 
 .projects-header {
-  font-size: 2rem;
   margin-bottom: 40px;
 }
 
