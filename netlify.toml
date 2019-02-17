@@ -1,4 +1,9 @@
 [build]
-  base    = "."
+  base = "."
   command = "npm run build"
   publish = "./dist"
+
+[[redirects]]
+  from = "https://pickleheads.netlify.com"
+  to = "https://pickleheads.club"
+  status = 301
